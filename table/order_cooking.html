@@ -26,7 +26,22 @@
           </div>
           <div class="row" id="buttons-bottom">
             <div class="col-12">
-              <button class="btn btn-primary btn-lg btn-block" id="btnOrder">Order</button>
+              <button class="btn btn-primary btn-lg btn-block" id="btnOrder" data-toggle="modal" data-target="#order-status-modal">Order Cooking</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="order-status-modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Order Cooking</h5>
+            </div>
+            <div class="modal-body">
+              <p>Our chefs are preparing your order now!</p>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-success" type="button" data-dismiss="modal">OK</button>
             </div>
           </div>
         </div>
