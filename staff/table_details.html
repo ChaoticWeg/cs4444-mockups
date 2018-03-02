@@ -104,11 +104,33 @@
           </tr>
         </tbody>
       </table>
+      <div class="modal" id="table-modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Table <span id="table-modal-number">3</span></h5>
+            </div>
+            <div class="modal-body">
+              <p>Status: <span id="table-modal-status">Order received</span></p>
+              <p>Requests: <span id="table-modal-help">Needs refill</span></p>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-success" id="modal-btn-close" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="invisible" id="modal-show" type="button" data-toggle="modal" data-target="#table-modal"></button>
     </div>
     <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js" integrity="sha384-feJI7QwhOS+hwpX2zkaeJQjeiwlhOP+SdQDqhgvvo1DsjtiSQByFdThsxO669S2D" crossorigin="anonymous"></script>
     <script src="/mockups/static/scripts/enums.js"></script>
-    <script src="/mockups/static/scripts/mockup-staff.js"></script>
+    <script src="/mockups/static/mockup-staff.js"></script>
+    <script>
+      $(() => {
+        $('#modal-show').click();
+      });
+    </script>
   </body>
 </html>
