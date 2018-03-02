@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>#TODO Eats</title>
+    <link rel="shortcut icon" href="/mockups/static/favicon.ico">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/4.0.0-beta.3/lux/bootstrap.min.css" rel="stylesheet" integrity="sha384-XI0PIujkSZEzZ5m8WTEm+krRuIpfO+vHrEznaIrhTAkbrbIvfs11kzCqUarPR7yn" crossorigin="anonymous">
+    <style>
+      #items div {
+        margin-top: 0.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-5">
+      <div class="container">
+        <a class="navbar-brand" href="/mockups">#TODO</a>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-9">
+          <h3 class="border-bottom pb-3">Select Entree</h3>
+          <div class="row" id="items">
+            <div class="col-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Hot Dog</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Hamburger</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Pizza</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Salad</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-2 mt-3 mr-3">
+              <button class="btn btn-large btn-primary">None</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <h3 class="border-bottom pb-3 mb-4">Order</h3>
+          <div class="card my-3">
+            <div class="card-body">
+              <ul class="list-unstyled">
+                <li class="text-truncate">Diet Coke</li>
+                <li class="text-truncate">Fried Pickles</li>
+                <li class="text-truncate">Hamburger</li>
+                <li class="text-truncate">No dessert</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card my-3">
+            <div class="card-body">
+              <ul class="list-unstyled">
+                <li class="text-truncate">Sprite</li>
+                <li class="text-truncate">No appetizer</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="fixed-bottom mb-3 mr-3">
+      <div class="row justify-content-end">
+        <div class="col-2 offset-10">
+          <button class="btn btn-info btn-block">Refill</button>
+          <button class="btn btn-danger btn-block">Help</button>
+        </div>
+      </div>
+    </div>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js" integrity="sha384-feJI7QwhOS+hwpX2zkaeJQjeiwlhOP+SdQDqhgvvo1DsjtiSQByFdThsxO669S2D" crossorigin="anonymous"></script>
+    <script src="/mockups/static/scripts/enums.js"></script>
+  </body>
+</html>
