@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>#TODO Eats</title>
+    <link rel="shortcut icon" href="/mockups/static/favicon.ico">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/4.0.0-beta.3/lux/bootstrap.min.css" rel="stylesheet" integrity="sha384-XI0PIujkSZEzZ5m8WTEm+krRuIpfO+vHrEznaIrhTAkbrbIvfs11kzCqUarPR7yn" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="/mockups/static/custom_styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-5">
+      <div class="container">
+        <a class="navbar-brand" href="/mockups">#TODO</a>
+      </div>
+    </nav>
+    <div class="container-fluid"></div>
+    <div class="container">
+      <h1 class="mb-5">Adjust Table: 3</h1>
+      <h3 class="border-bottom pb-3 mb-2">Actions</h3>
+      <div class="container mt-3" id="buttons">
+        <button class="btn btn-danger btn-lg mx-2">Cancel Order</button>
+        <button class="btn btn-primary btn-lg mx-2">Cash Out</button>
+        <button class="btn btn-info btn-lg mx-2">Comp Item(s)</button>
+      </div>
+      <div class="container border-top my-5 py-5">
+        <button class="btn btn-primary btn-lg">&lt; Back</button>
+      </div>
+      <div class="modal" id="cancel-modal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Cancel Order</h5>
+            </div>
+            <div class="modal-body">
+              <p>Cancel table 3's order?</p>
+            </div>
+            <div class="modal-footer justify-content-between">
+              <button class="btn btn-primary">No</button>
+              <button class="btn btn-danger">Yes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="cash-out-modal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Cash Out</h5>
+            </div>
+            <div class="modal-body">
+              <p>Cash out table 3?</p>
+            </div>
+            <div class="modal-footer justify-content-between">
+              <button class="btn btn-primary">No</button>
+              <button class="btn btn-success">Yes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="comp-modal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Comp Item(s)</h5>
+            </div>
+            <div class="modal-body">
+              <table class="table table-sm">
+                <thead class="thead-light">
+                  <tr>
+                    <th scope="col"></th>
+                    <th scope="col">Item</th>
+                    <th scope="col">Price</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr data-price="3.99">
+                    <td>
+                      <input type="checkbox" checked="checked">
+                    </td>
+                    <td>Diet Coke</td>
+                    <td>3.99</td>
+                  </tr>
+                  <tr data-price="5.99">
+                    <td>
+                      <input type="checkbox" checked="checked">
+                    </td>
+                    <td>Hot Dog</td>
+                    <td>5.99</td>
+                  </tr>
+                  <tr data-price="3.99">
+                    <td>
+                      <input type="checkbox">
+                    </td>
+                    <td>Coke</td>
+                    <td>3.99</td>
+                  </tr>
+                  <tr data-price="4.99">
+                    <td>
+                      <input type="checkbox" checked="checked">
+                    </td>
+                    <td>Fried Pickles</td>
+                    <td>4.99</td>
+                  </tr>
+                  <tr data-price="5.99">
+                    <td>
+                      <input type="checkbox">
+                    </td>
+                    <td>Hamburger</td>
+                    <td>5.99</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer justify-content-between">
+              <button class="btn btn-primary">Cancel</button>
+              <button class="btn btn-info">Comp</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="invisible" id="show-cancel" data-toggle="modal" data-target="#cancel-modal"></button>
+      <button class="invisible" id="show-cash-out" data-toggle="modal" data-target="#cash-out-modal"></button>
+      <button class="invisible" id="show-comp" data-toggle="modal" data-target="#comp-modal"></button>
+    </div>
+    <div class="container-fluid"></div>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js" integrity="sha384-feJI7QwhOS+hwpX2zkaeJQjeiwlhOP+SdQDqhgvvo1DsjtiSQByFdThsxO669S2D" crossorigin="anonymous"></script>
+    <script src="/mockups/static/scripts/enums.js"></script>
+    <script>
+      $(() => {
+        $('#show-cancel').click();
+      });
+    </script>
+  </body>
+</html>
