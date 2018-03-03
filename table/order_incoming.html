@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>#TODO Eats</title>
+    <link rel="shortcut icon" href="/mockups/static/favicon.ico">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/4.0.0-beta.3/lux/bootstrap.min.css" rel="stylesheet" integrity="sha384-XI0PIujkSZEzZ5m8WTEm+krRuIpfO+vHrEznaIrhTAkbrbIvfs11kzCqUarPR7yn" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="/mockups/static/custom_styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="/mockups/static/table.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-5">
+      <div class="container">
+        <a class="navbar-brand" href="/mockups">#TODO</a>
+      </div>
+    </nav>
+    <div class="container-fluid"></div>
+    <div class="container">
+      <div class="row" id="buttons-wrapper">
+        <div class="col-6 offset-3">
+          <div class="row mb-4" id="buttons-top">
+            <div class="col-6">
+              <button class="btn btn-primary btn-lg btn-block" id="btnMenu">Menu</button>
+            </div>
+            <div class="col-6">
+              <button class="btn btn-primary btn-lg btn-block" id="btnGames">Games</button>
+            </div>
+          </div>
+          <div class="row" id="buttons-bottom">
+            <div class="col-12">
+              <button class="btn btn-primary btn-lg btn-block" id="btnOrder" data-toggle="modal" data-target="#order-status-modal">Order Incoming</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="order-status-modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Order Incoming</h5>
+            </div>
+            <div class="modal-body">
+              <p>Your order will be on its way to you shortly!</p>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-success" type="button" data-dismiss="modal">OK</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="mt-5" id="spacer"></div>
+      <div class="fixed-bottom mb-3 mr-3">
+        <div class="row justify-content-end">
+          <div class="col-2 offset-10">
+            <button class="btn btn-info btn-block">Refill</button>
+            <button class="btn btn-danger btn-block">Help</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js" integrity="sha384-feJI7QwhOS+hwpX2zkaeJQjeiwlhOP+SdQDqhgvvo1DsjtiSQByFdThsxO669S2D" crossorigin="anonymous"></script>
+    <script src="/mockups/static/scripts/enums.js"></script>
+  </body>
+</html>

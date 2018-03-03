@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>#TODO Eats</title>
+    <link rel="shortcut icon" href="/mockups/static/favicon.ico">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/4.0.0-beta.3/lux/bootstrap.min.css" rel="stylesheet" integrity="sha384-XI0PIujkSZEzZ5m8WTEm+krRuIpfO+vHrEznaIrhTAkbrbIvfs11kzCqUarPR7yn" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="/mockups/static/custom_styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-5">
+      <div class="container">
+        <a class="navbar-brand" href="/mockups">#TODO</a>
+      </div>
+    </nav>
+    <div class="container-fluid"></div>
+    <div class="container">
+      <h1 class="border-bottom pb-3 mb-3">Pending Orders</h1>
+      <div class="row" id="orders">
+        <div class="col-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">#1438</h5>
+              <ul class="card-text">
+                <li>Diet Coke</li>
+                <li>Hot Dog **</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">#1439</h5>
+              <ul class="card-text">
+                <li>Coke</li>
+                <li>Fried Pickles</li>
+                <li>Hamburger</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="order-modal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Order #1438</h5>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead class="thead-dark">
+                  <tr>
+                    <th scope="col">Item</th>
+                    <th scope="col">Requests</th>
+                    <th scope="col">Allergies</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Diet Coke</th>
+                    <th>Wedge of lemon</th>
+                    <th>-</th>
+                  </tr>
+                  <tr>
+                    <th scope="row">Hot Dog</th>
+                    <th>-</th>
+                    <th>Gluten intolerant</th>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-primary">Start Order</button>
+              <button class="btn btn-danger">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="invisible" id="modal-show" data-toggle="modal" data-target="#order-modal"></button>
+    </div>
+    <div class="container-fluid"></div>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js" integrity="sha384-feJI7QwhOS+hwpX2zkaeJQjeiwlhOP+SdQDqhgvvo1DsjtiSQByFdThsxO669S2D" crossorigin="anonymous"></script>
+    <script src="/mockups/static/scripts/enums.js"></script>
+    <script>
+      $(() => {
+        $('#modal-show').click();
+      });
+    </script>
+  </body>
+</html>

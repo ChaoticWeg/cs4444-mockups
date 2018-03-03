@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>#TODO Eats</title>
+    <link rel="shortcut icon" href="/mockups/static/favicon.ico">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/4.0.0-beta.3/lux/bootstrap.min.css" rel="stylesheet" integrity="sha384-XI0PIujkSZEzZ5m8WTEm+krRuIpfO+vHrEznaIrhTAkbrbIvfs11kzCqUarPR7yn" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="/mockups/static/custom_styles.css" rel="stylesheet">
+    <style>
+      #tip-value {
+        max-width: 10rem;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-5">
+      <div class="container">
+        <a class="navbar-brand" href="/mockups">#TODO</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-contents"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbar-contents">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Order</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sign In</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid"></div>
+    <div class="container">
+      <h1>Payment</h1>
+      <div class="row mt-5">
+        <div class="col-12">
+          <table class="table table-sm">
+            <tbody>
+              <tr>
+                <td class="text-left">Food</td>
+                <td class="text-right">24.95</td>
+              </tr>
+              <tr>
+                <td class="text-left">Tip</td>
+                <td>
+                  <div class="input-group justify-content-end">
+                    <input class="form-control text-right" id="tip-value" type="text" value="20">
+                    <div class="input-group-append">
+                      <div class="input-group-text">
+                        <input type="radio">&nbsp; $</div>
+                      <div class="input-group-text">
+                        <input type="radio" checked="checked">&nbsp; %</div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="text-left">Total</td>
+                <td class="text-right">29.94</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-6">
+          <button class="btn btn-primary" id="btn-cancel">&lt; &nbsp; Cancel</button>
+        </div>
+        <div class="col-6">
+          <div class="d-flex justify-content-end">
+            <button class="btn btn-success ml-2" id="btn-cash">Cash</button>
+            <button class="btn btn-info ml-2" id="btn-card">Card</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid"></div>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js" integrity="sha384-feJI7QwhOS+hwpX2zkaeJQjeiwlhOP+SdQDqhgvvo1DsjtiSQByFdThsxO669S2D" crossorigin="anonymous"></script>
+    <script src="/mockups/static/scripts/enums.js"></script>
+  </body>
+</html>
