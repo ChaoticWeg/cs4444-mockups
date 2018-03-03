@@ -3,8 +3,18 @@
   <head>
     <title>#TODO Eats</title>
     <link rel="shortcut icon" href="/mockups/static/favicon.ico">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://maxcdn.bootstrapcdn.com/bootswatch/4.0.0-beta.3/lux/bootstrap.min.css" rel="stylesheet" integrity="sha384-XI0PIujkSZEzZ5m8WTEm+krRuIpfO+vHrEznaIrhTAkbrbIvfs11kzCqUarPR7yn" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="/mockups/static/custom_styles.css" rel="stylesheet">
+    <style>
+      ul a {
+        text-decoration: underline;
+      }
+    </style>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-5">
@@ -12,17 +22,13 @@
         <a class="navbar-brand" href="/mockups">#TODO</a>
       </div>
     </nav>
+    <div class="container-fluid"></div>
     <div class="container">
-      <h1>Mock-Ups</h1>
-      <ul>
-        <li>
-          <a href="/mockups/readme.html">Readme</a>
-        </li>
-        <li>
-          <a href="/mockups/table/">Table</a>
+      <h1 class="border-bottom pb-3 mb-4">Mock-Ups</h1>
+      <ul class="list-unstyled">
+        <li>Table
           <ul>
-            <li>
-              <a href="/mockups/table/index.html">Main View</a>
+            <li>Main View
               <ul>
                 <li>
                   <a href="/mockups/table/index.html">Awaiting Order</a>
@@ -41,19 +47,40 @@
                 </li>
               </ul>
             </li>
-          </ul>
-          <ul>
+            <li>Ordering
+              <ul>
+                <li>
+                  <a href="/mockups/table/ordering/select_beverage.html">Select Beverage</a>
+                </li>
+                <li>
+                  <a href="/mockups/table/ordering/select_appetizer.html">Select Appetizer</a>
+                </li>
+                <li>
+                  <a href="/mockups/table/ordering/select_entree.html">Select Entree</a>
+                </li>
+                <li>
+                  <a href="/mockups/table/ordering/select_dessert.html">Select Dessert</a>
+                </li>
+              </ul>
+            </li>
             <li>
               <a href="/mockups/table/menu.html">Menu</a>
             </li>
+            <li>Payment
+              <ul>
+                <li>
+                  <a href="/mockups/table/payment/payment.html">Pay In Full</a>
+                </li>
+                <li>
+                  <a href="/mockups/table/payment/split.html">Split Payment</a>
+                </li>
+              </ul>
+            </li>
           </ul>
         </li>
-        <li>
-          <a href="/mockups/staff/">Staff</a>
+        <li>Staff
           <ul>
-            <li>
-              <a href="/mockups/staff/index.html">Main View</a>
-            </li>
+            <li>Main View</li>
             <ul>
               <li>
                 <a href="/mockups/staff/index.html">Overview</a>
@@ -64,14 +91,12 @@
             </ul>
           </ul>
         </li>
-        <li>
-          <a href="/mockups/kitchen/">Kitchen</a>
+        <li>Kitchen
           <ul>
-            <li>
-              <a href="/mockups/kitchen/index.html">Main View</a>
+            <li>Main View
               <ul>
                 <li>
-                  <a href="/mockups/kitchen/index.html">No Order In Progress</a>
+                  <a href="/mockups/kitchen/index.html">Overview</a>
                 </li>
                 <li>
                   <a href="/mockups/kitchen/order_details.html">Order Details</a>
@@ -85,6 +110,7 @@
         </li>
       </ul>
     </div>
+    <div class="container-fluid"></div>
     <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js" integrity="sha384-feJI7QwhOS+hwpX2zkaeJQjeiwlhOP+SdQDqhgvvo1DsjtiSQByFdThsxO669S2D" crossorigin="anonymous"></script>
